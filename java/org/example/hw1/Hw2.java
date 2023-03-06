@@ -7,7 +7,7 @@ public class Hw2 {
         System.out.println("Enter a sequence of numbers, to end enter 0");
         int numberA = scan.nextInt();
         int sum = 0;
-        while (true){
+        while (numberA != 0){
             int numberB = scan.nextInt();
             if (numberB == 0){
                 break;
