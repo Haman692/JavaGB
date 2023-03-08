@@ -12,5 +12,7 @@ public class Cw4 {
         System.out.println("сколяронок произведение = " + vextor1.scalarMulti(vextor2));
         System.out.println("Векторное произведение = " + vextor1.multyVector(vextor2));
         System.out.println("Коссинус угла = " + vextor1.cosVector(vextor2));
+        System.out.println("Сумма векторов = " + vextor1.sumVector(vextor2));
+        System.out.println("Разность векторов = " +vextor1.diffVector(vextor2));
     }
 }
