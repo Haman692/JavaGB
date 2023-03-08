@@ -22,6 +22,11 @@ public class task4 {
         System.out.println("Validete:" + isValidSudoku(board));
     }
 
+    /**
+     *
+     * @param board Судоку
+     * @return Валидна или нет
+     */
     private static boolean isValidSudoku(char[][] board) {
         boolean flag = true;
         Set set = new HashSet();
