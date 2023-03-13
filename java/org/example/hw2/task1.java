@@ -18,7 +18,6 @@ public class task1 {
 
     /**
      * Sum prime numbers
-     *
      * @param arr Executable array
      */
     private static void sumPrimeNumbers(int[] arr) {
