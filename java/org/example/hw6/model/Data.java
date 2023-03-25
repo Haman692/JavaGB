@@ -90,8 +90,9 @@ public class Data {
 
     /**
      * Сортировка
+     *
      * @param laptops Изначальный список
-     * @param choice Список сортировки
+     * @param choice  Список сортировки
      * @return Отсортированный список
      */
     public static List<Laptop> suitableOptions(List<Laptop> laptops, Map<String, String> choice) {
@@ -101,27 +102,22 @@ public class Data {
                 if (laptop == sortedList.get(j)) {
                     if (choice.containsKey("name") && !laptop.producer().equals(choice.get("name"))) {
                         sortedList.remove(j);
-                        break;
-                    }
-                    if (choice.containsKey("color") && !laptop.color().equals(choice.get("color"))) {
+
+                    } else if (choice.containsKey("color") && !laptop.color().equals(choice.get("color"))) {
                         sortedList.remove(j);
-                        break;
-                    }
-                    if (choice.containsKey("ram") && laptop.ram() <= Integer.parseInt(choice.get("ram"))) {
+
+                    } else if (choice.containsKey("ram") && laptop.ram() <= Integer.parseInt(choice.get("ram"))) {
                         sortedList.remove(j);
-                        break;
-                    }
-                    if (choice.containsKey("storage") && laptop.storage() <= Integer.parseInt(choice.get("storage"))) {
+
+                    } else if (choice.containsKey("storage") && laptop.storage() <= Integer.parseInt(choice.get("storage"))) {
                         sortedList.remove(j);
-                        break;
-                    }
-                    if (choice.containsKey("os") && !laptop.os() == Boolean.getBoolean(choice.get("os"))) {
+
+                    } else if (choice.containsKey("os") && !laptop.os() == Boolean.getBoolean(choice.get("os"))) {
                         sortedList.remove(j);
-                        break;
-                    }
-                    if (choice.containsKey("price") && laptop.price() >= Double.parseDouble(choice.get("price"))) {
+
+                    } else if (choice.containsKey("price") && laptop.price() >= Double.parseDouble(choice.get("price"))) {
                         sortedList.remove(j);
-                        break;
+
                     }
                 }
             }

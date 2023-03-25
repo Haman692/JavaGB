@@ -19,8 +19,11 @@ public class Store {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
         List<Laptop> sortList = suitableOptions(laptops, allSorted);
-        for (int i = 0; i < sortList.size(); i++) {
-            System.out.println("Подходящие варианты: " + sortList.get(i).getClass().getSimpleName());
+        if(sortList.size() == 0){
+            System.out.println("Не подходящих вариантов");
+        }
+        for (Laptop laptop : sortList) {
+            System.out.println("Подходящие варианты: " + laptop.getClass().getSimpleName());
         }
     }
 
