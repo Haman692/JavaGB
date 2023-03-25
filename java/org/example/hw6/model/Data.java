@@ -87,6 +87,13 @@ public class Data {
         return allSorted;
     }
 
+
+    /**
+     * Сортировка
+     * @param laptops Изначальный список
+     * @param choice Список сортировки
+     * @return Отсортированный список
+     */
     public static List<Laptop> suitableOptions(List<Laptop> laptops, Map<String, String> choice) {
         List<Laptop> sortedList = new ArrayList<Laptop>(laptops);
         for (Laptop laptop : laptops) {
